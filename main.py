@@ -1,3 +1,6 @@
+import sqlite3
+
+connection = sqlite3.connect("gta.db")
 release_list = [
   (1997, "Grand Theft Auto", "state of New Guernsey"),
   (1999, "Grand Theft Auto 2", "Anywhere, USA"),
@@ -7,3 +10,5 @@ release_list = [
   (2008, "Grand Theft Auto IV", "Liberty City"),
   (2013, "Grand Theft Auto V", "Los Santos")
 ]
+
+connection.close()
